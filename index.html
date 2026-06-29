@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Ranking Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Custom Ranking Poll</h1>
+
+    <div class="creator">
+        <input type="text" id="itemInput" placeholder="Enter an item">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <ul id="itemList"></ul>
+
+    <button class="createBtn" onclick="createRanking()">
+        Create Ranking
+    </button>
+
+    <div id="rankingSection" style="display:none;">
+        <h2>Drag to Rank</h2>
+        <ul id="rankingList"></ul>
+
+        <button onclick="showResults()">Finish Ranking</button>
+
+        <div id="results"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
